@@ -1,0 +1,86 @@
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+}
+#container{
+    background-color: #fff;
+}
+h1,h2,h3,h4,p,a{
+    margin: 0;
+    color: #fff;
+}
+#header{
+    max-height: 765px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+#header .border{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 3px solid #fff;
+}
+#header .border .icons{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.helper{
+    background: #5694e1;
+    max-height: 125px;
+    height: 100%;
+    display: table;
+    width: 100%;
+    border: 1px solid #b5ceeb;
+    margin-top: 55px;
+}
+.header-bg{
+    display: table-cell;
+    vertical-align: middle;
+}
+.header-top .row{
+    padding: 10px;
+}
+.header-top .left{
+    border-right: 2px solid #fff;
+}
+.header-top .left h1{
+    font-size: 40px;
+}
+.header-top .left h1 span{
+    display: block;   
+}
+.header-top .right{
+    padding: 7px 20px;   
+}
+.header-top .right p{
+    font-size: 26px;
+}
+.icons .icon{
+    height: 60px;
+}
+.icons .icon div{
+    height: 100%;
+}
+.icons .icon a{
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.icons .map{
+    background-image: url(../images/map.png);
+}
+.icons .mail{
+    background-image: url(../images/mail.png);
+}
+.icons .calendar{
+    background-image: url(../images/calendar.png);
+}
