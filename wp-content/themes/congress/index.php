@@ -89,7 +89,7 @@ $carousel = get_posts($carousel_args);
     </div>
     <div class="row row-centered row-background">
         <div class="col-md-8 col-xs-12 col-centered">
-            <div class="col-md-4 text-center speaker">
+            <div id="382" class="col-md-4 text-center speaker">
                 <div class="helper">
                     <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
                 </div>    
@@ -181,26 +181,46 @@ $carousel = get_posts($carousel_args);
 <div class="container-fluid" id="welcome-to-singapore">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <ul>
-                <li><a href="#" alt="">GETTING<br />AROUND</a></li>
-                <li><a href="#" alt="">CITY<br />SIGHTSEEING</a></li>
-                <li><a href="#" alt="">CONFERENCE LOCATION</a></li>
-                <li><a href="#" alt="">ARRIVAL<br />FROM AIRPORT</a></li>
-            </ul>           
+            <div class="col-md-8 col-centered">  
+                <ul id="tabs-bottom" class="nav nav-tabs" role="tablist">
+                    <li class="col-md-3 active"><a href="#getting" aria-controls="getting" role="tab" data-toggle="tab">GETTING AROUND</a></li>
+                    <li class="col-md-3"><a href="#city" aria-controls="city" role="tab" data-toggle="tab">CITY SIGHTSEEING</a></li>
+                    <li class="col-md-3"><a href="#conference" aria-controls="conference" role="tab" data-toggle="tab">CONFERENCE LOCATION</a></li>
+                    <li class="col-md-3"><a href="#arrival" aria-controls="arrival" role="tab" data-toggle="tab">ARRIVAL FROM AIRPORT</a></li>
+                </ul>
+            </div>    
         </div>      
     </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <p id="caption-wts">WELCOME TO SINGAPORE</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commodo dignissim lacus ac scelerisque nsus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
+    <div class="tab-content">  
+        <div role="tabpanel" class="tab-pane fade in active" id="getting">    
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p id="caption-wts">WELCOME TO SINGAPORE</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commodo dignissim lacus ac scelerisque nsus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <a href="#" class="btn-blue" alt="">READ MORE</a>
+                    <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
+                </div>
+            </div> 
         </div>
+        <div role="tabpanel" class="tab-pane fade" id="city">    
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p id="caption-wts">City</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commodo dignissim lacus ac scelerisque nsus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <a href="#" class="btn-blue" alt="">READ MORE</a>
+                    <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
+                </div>
+            </div> 
+        </div> 
     </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <a href="#" class="btn-blue" alt="">READ MORE</a>
-            <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
-        </div>
-    </div>  
 </div>
 <div class="container-fluid" id="bioevents-contacts">
     <div class="row">
@@ -230,4 +250,19 @@ $carousel = get_posts($carousel_args);
         </div>
     </div>
 </div>
+<!-- pop-ups -->
+<div class="container-fluid main-popup 382">
+    <div class="row">
+        <div class="col-md-8 popup col-centered">
+            <div class="col-md-4 image"><img src="<?php echo get_template_directory_uri() ?>/images/face.png"></div>
+            <div class="col-md-8 text">
+                <p class="name">First Name LastName</p>
+                <p class="spec">Specialization NameTitle, Country</p>
+                <p class="name bio">Bio:</p>
+                <p>"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p></div>
+            <a class="close-popup">Close X</a>
+        </div>
+    </div>
+</div>
+
 <?php get_footer(); ?>

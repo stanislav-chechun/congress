@@ -277,10 +277,6 @@ html, body{
     margin-top: 6%;
 }
 #welcome-to-singapore li{
-    display: inline-block;
-    min-width: 100px;
-    max-width: 200px;
-    width: 20%;
     padding: 0 1.5% 1%;
     border-right: 1px solid #fff;
 }
@@ -372,6 +368,7 @@ a{
 #speakers-block .speaker .helper{
     display: inline-block;
     position: relative;
+    cursor: pointer;
 }
 #speakers-block .speaker .helper:after{
     content: 'Read about me';
@@ -383,6 +380,7 @@ a{
     text-align: left;
     color: #478adf;
     cursor: pointer;
+    display: none;
 }
 #speakers-block .speaker .helper:before{
     content: '+';
@@ -397,7 +395,12 @@ a{
     font-weight: bold;
     font-size: 30px;
     cursor: pointer;
-} 
+    display: none;
+}
+#speakers-block .speaker .helper:hover:after,#speakers-block .speaker .helper:hover:before{
+    display: block;
+
+}
 #speakers-block .speaker p{
     font-size: 18px;
     color: #478adf;
@@ -611,4 +614,48 @@ a{
 }
 .btn-blue:hover{
     background: rgba(68, 140, 203, 0.8);
+}
+.main-popup{
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    color:#fff;
+    display: none;
+}
+.main-popup .row{
+    margin-top: 140px;
+}
+.main-popup .row img{
+    min-height: 230px;
+    border: 5px solid #fff;
+    margin: 0 auto;
+    display: block;
+}
+.main-popup .row p{
+  font-family: robotothin;
+ font-size: 25px; 
+}
+.main-popup .row .bio{
+    margin: 25px 0;
+}
+.main-popup .row .name{
+    font-family:robotomedium; 
+}
+.main-popup .row .spec{
+    font-size: 18px;
+}
+.close-popup{
+    float: right;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    margin-right: 30px;
+    padding: 7px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: robotolight;
+}
+.popup .text{
+    font-size: 25px;
+    line-height: 28px;
 }

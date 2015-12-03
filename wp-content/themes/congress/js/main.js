@@ -45,5 +45,14 @@ jQuery(document).ready(function ($) {
         $('.slide .text p').css('padding-left', time).css('padding-right', button);
 
     });
+    $('#tabs-bottom').tab();
+    $(".speaker img").click(function () {
+       var id = $(this).parent().parent().attr('id');
+       var res = '.'+id;
+       $(res).fadeIn();
+    });
+        $(".close-popup").click(function () {
+           $('.main-popup').fadeOut(); 
+        });
 });
 
