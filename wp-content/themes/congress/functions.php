@@ -6,15 +6,21 @@ add_action('wp_before_admin_bar_render', 'remove_admin_bar_links');
 add_action('init', 'registration_post_type', 0);
 add_action('init', 'program_post_type', 0);
 add_action('init', 'speakers_post_type', 0);
-add_action('wp_enqueue_scripts','add_style');
+add_action('init', 'sponsorships_post_type', 0);
+add_action('wp_enqueue_scripts', 'add_style');
 
-function add_style(){
-    wp_enqueue_script( 'jquery' );
-    wp_enqueue_style('bootsrtap_style_main', get_template_directory_uri().'/css/bootstrap.css');
-    wp_enqueue_style('bootsrtap_style_theme', get_template_directory_uri().'/css/bootstrap-theme.css');
-    wp_enqueue_style('normalize', get_template_directory_uri().'/css/normalize.css');
-    wp_enqueue_style('theme_main_styles', get_template_directory_uri().'/css/main.css');
-    wp_enqueue_script('bootstrap_js', get_template_directory_uri().'/js/bootstrap.min.js', 'jquery', '', true);
+add_theme_support('post-thumbnails');
+
+function add_style() {
+    wp_enqueue_script('jquery');
+    wp_enqueue_style('bootsrtap_style_main', get_template_directory_uri() . '/css/bootstrap.css');
+    wp_enqueue_style('bootsrtap_style_theme', get_template_directory_uri() . '/css/bootstrap-theme.css');
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css');
+    wp_enqueue_style('owl', get_template_directory_uri() . '/css/owl.carousel.css');
+    wp_enqueue_style('theme_main_styles', get_template_directory_uri() . '/css/main.css');
+    wp_enqueue_script('bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js', 'jquery', '', true);
+    wp_enqueue_script('owl_js', get_template_directory_uri() . '/js/owl.carousel.min.js', 'jquery', '', true);
+    wp_enqueue_script('main_js', get_template_directory_uri() . '/js/main.js', 'jquery', '', true);
 }
 
 function my_remove_menu_pages() {
@@ -180,4 +186,47 @@ function registration_post_type() {
         'capability_type' => 'post',
     );
     register_post_type('registrations', $args);
+}
+function sponsorships_post_type() {
+
+    $labels = array(
+        'name' => _x('Sponsorships', 'Post Type General Name', 'congress'),
+        'singular_name' => _x('Sponsorships', 'Post Type Singular Name', 'congress'),
+        'menu_name' => __('Sponsorships', 'congress'),
+        'name_admin_bar' => __('Sponsorships', 'congress'),
+        'parent_item_colon' => __('Sponsorships:', 'congress'),
+        'all_items' => __('All Sponsorships', 'congress'),
+        'add_new_item' => __('Add Sponsorship program', 'congress'),
+        'add_new' => __('Add Sponsorship', 'congress'),
+        'new_item' => __('New Sponsorship', 'congress'),
+        'edit_item' => __('Edit Sponsorship', 'congress'),
+        'update_item' => __('Update Sponsorship', 'congress'),
+        'view_item' => __('View Sponsorship', 'congress'),
+        'search_items' => __('Search Sponsorship', 'congress'),
+        'not_found' => __('Not found', 'congress'),
+        'not_found_in_trash' => __('Not found in Trash', 'congress'),
+        'items_list' => __('Sponsorships list', 'congress'),
+        'items_list_navigation' => __('Sponsorships list navigation', 'congress'),
+        'filter_items_list' => __('Filter Sponsorships list', 'congress'),
+    );
+    $args = array(
+        'label' => __('Sponsorships', 'congress'),
+        'description' => __('Sponsorships', 'congress'),
+        'labels' => $labels,
+        'supports' => array('title','thumbnail'),
+        'taxonomies' => array(),
+        'hierarchical' => false,
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 10,
+        'show_in_admin_bar' => true,
+        'show_in_nav_menus' => true,
+        'can_export' => true,
+        'has_archive' => true,
+        'exclude_from_search' => true,
+        'publicly_queryable' => true,
+        'capability_type' => 'post',
+    );
+    register_post_type('sponsorships', $args);
 }
