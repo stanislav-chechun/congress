@@ -170,7 +170,7 @@ function registration_post_type() {
         'label' => __('Registrations', 'congress'),
         'description' => __('Registrations', 'congress'),
         'labels' => $labels,
-        'supports' => array('title', 'editor', 'thumbnail', 'revisions'),
+        'supports' => array('title','revisions'),
         'taxonomies' => array(),
         'hierarchical' => false,
         'public' => true,

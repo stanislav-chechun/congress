@@ -1,10 +1,162 @@
 <?php get_header(); ?>
 <?php
 global $post;
-$image = get_fields('option');
+$options = get_fields('option');
 $carousel_args = array('post_type' => 'sponsorships', 'post_status' => 'publish', 'posts_per_page' => -1);
 $carousel = get_posts($carousel_args);
 ?>
+<div class="container-fluid" id="welcome-first">
+    <div id="border-first"></div>
+    <div class="row" id="top-first">
+        <div class="col-md-8 col-sm-8 col-xs-8">
+            <div id="text-first">
+                <h1>The International Congress on </h1>
+                <strong>Clinicals Trial for Medical Devices</strong>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4" id="date-first">
+            <p>26 AUG 2015</p>
+            <strong>Cityname, Singapore</strong>
+        </div>
+
+    </div>
+
+    <div class="row" id="bottom-first">
+        <div class="col-md-8 col-sm-8 col-xs-8" id="dynamic-links">
+            <ul class="list-inline">
+                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/calendar.png" alt="Calendar" /></a></li>
+                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/mail.png" alt="Mail" /></a></li>
+                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="Map" /></a></li>
+            </ul> 
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4" id="button-first">
+            <a href="#" class="button" id="register-now">Register now</a>
+        </div>
+
+    </div>
+
+
+
+</div>
+<div class="container-fluid" id="welcome-to-name-congress">
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <ul role="tablist">
+                <li><a href="#home" alt="" role="tab" data-toggle="tab">HOME</a></li>
+                <li><a href="#congress-information" alt="" role="tab" data-toggle="tab">CONGRESS INFORMATION</a></li>
+                <li><a href="#program" alt="" role="tab" data-toggle="tab">PROGRAM</a></li>
+                <li><a href="#registration" alt="" role="tab" data-toggle="tab">REGISTRATION</a></li>
+                <li><a href="#accomodation" alt="" role="tab" data-toggle="tab">ACCOMODATION</a></li>
+                <li><a href="#sponsors-exhibitors" alt="" role="tab" data-toggle="tab">SPONSORS & EXHIBITORS</a></li>
+                <li><a href="#endorsements" alt="" role="tab" data-toggle="tab">ENDORSEMENTS</a></li>
+                <li><a href="#contact-us" alt="" role="tab" data-toggle="tab">CONTACT US</a></li>
+            </ul>			
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>
+            <div role="tabpanel" class="tab-pane" id="congress-information">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-2</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>
+            <div role="tabpanel" class="tab-pane" id="program">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-3</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>
+            <div role="tabpanel" class="tab-pane" id="registration">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-4</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>
+            <div role="tabpanel" class="tab-pane" id="accomodation">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-5</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>	
+            <div role="tabpanel" class="tab-pane" id="sponsors-exhibitors">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-6</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>
+            <div role="tabpanel" class="tab-pane" id="endorsements">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-7</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>
+            <div role="tabpanel" class="tab-pane" id="contact-us">
+                <ul>
+                    <li><a href="#" alt="">LOREM IPSUM-8</a></li>
+                    <li><a href="#" alt="">DOLOR SIT AMET</a></li>
+                    <li><a href="#" alt="">CONSECTETUR</a></li>
+                    <li><a href="#" alt="">ADIPISCING</a></li>
+                </ul>	
+            </div>				
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <p id="caption-wtnc">WELCOME TO NAME CONGRESS</p>
+        </div>
+        <div class="col-md-5 col-sm-12 col-xs-12">
+            <p>Lorem ipsum dolor sit amet, consectetur adip-iscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commondo dignissim lacus, ac scelerisque risus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
+            <p>It tincidunt nulla finibus a. Nunc turpis odio, luctus sit amet elementum in, ultricies et urna. Ut vel felis at justo suscipit efficitur nec sit amet orci. Aliquam auctor nibh et soiiicitudin porta. Aenean bibendum dolor vitae odio lacinia tempus. Morbi luctus risus in mollis</p>
+        </div>
+        <div class="col-md-7 col-sm-12 col-xs-12">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="<?php echo get_template_directory_uri() ?>/img/carousel1_item.png" class="light-box"><img src="<?php echo get_template_directory_uri() ?>/img/carousel1_item.png" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="<?php echo get_template_directory_uri() ?>/img/carousel1_item.png" class="light-box"><img src="<?php echo get_template_directory_uri() ?>/img/carousel1_item.png" alt=""></a>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>	
+        <div class="col-md-12 col-sm-12 col-xs-12" id="buttons-block">
+            <a href="#" class="btn-blue" alt="">READ MORE</a>
+            <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
+        </div>
+    </div>			
+</div>
 <div class="container-fluid" id="newslwtter">
     <h3>Official newsletter</h3>
     <div class="row">
@@ -89,48 +241,23 @@ $carousel = get_posts($carousel_args);
     </div>
     <div class="row row-centered row-background">
         <div class="col-md-8 col-xs-12 col-centered">
-            <div id="382" class="col-md-4 text-center speaker">
-                <div class="helper">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
-                </div>    
-                <p class="first-text">First name <span>Last Name</span></p>
-                <p>First name <span>Last Name</span></p>
-            </div>
-            <div class="col-md-4 text-center speaker">
-                <div class="helper">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
-                </div> 
-                <p class="first-text">First name <span>Last Name</span></p>
-                <p>First name <span>Last Name</span></p>
-            </div>
-            <div class="col-md-4 text-center speaker">
-                <div class="helper">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
-                </div> 
-                <p class="first-text">First name <span>Last Name</span></p>
-                <p>First name <span>Last Name</span></p>
-            </div>
-            <div class="col-md-4 text-center speaker">
-                <div class="helper">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
-                </div> 
-                <p class="first-text">First name <span>Last Name</span></p>
-                <p>First name <span>Last Name</span></p>
-            </div>
-            <div class="col-md-4 text-center speaker">
-                <div class="helper">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
-                </div> 
-                <p class="first-text">First name <span>Last Name</span></p>
-                <p>First name <span>Last Name</span></p>
-            </div>
-            <div class="col-md-4 text-center speaker">
-                <div class="helper">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/face.png">
-                </div> 
-                <p class="first-text">First name <span>Last Name</span></p>
-                <p>First name <span>Last Name</span></p>
-            </div>
+            <?php
+            global $post;
+            $args = array('post_type' => 'speakers', 'numberposts' => -1);
+            $posts = get_posts($args);
+            foreach ($posts as $post) {
+                setup_postdata($post);
+                $data = get_post_meta(($post->ID), '', true);
+                ?>    
+                <div id="<?php the_ID() ?>" class="col-md-4 text-center speaker">
+                    <div class="helper">
+                        <?php the_post_thumbnail() ?>
+                    </div>    
+                    <?php //var_dump($data) ?>
+                    <p class="first-text"><?php echo $data['fisrt_name']['0'] ?> <span> <?php echo $data['last_name']['0'] ?></span></p>
+                    <p><?php echo __('Specialization') . ' ' . $data['specilization']['0'] ?>,<span><?php echo $data['country']['0'] ?></span></p>
+                </div>
+            <?php } ?>
         </div>
     </div>
 </div>
@@ -141,40 +268,32 @@ $carousel = get_posts($carousel_args);
         </div>
     </div>
     <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12">
-            <p class="title-reg">PHYSICIAN / ACADEMIC</p>
-            <p><span class="color-grey">$450</span>Early Registration prior to and until 31 July, 2015</p>
-            <p><span class="color-grey">$540</span>Regular Registration From 1 August, until 13 October, 2015</p>
-            <p><span class="color-blue">$650</span>On-site Registration</p>
-            <a href="#" class="btn-green" alt="">REGISTER NOW</a>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12">
-            <p class="title-reg">PHYSICIAN / ACADEMIC</p>
-            <p><span color-blue>$450</span>Early Registration prior to and until 31 July, 2015</p>
-            <p><span class="color-grey">$540</span>Regular Registration From 1 August, until 13 October, 2015</p>
-            <p><span class="color-grey">$650</span>On-site Registration</p>
-            <a href="#" class="btn-green" alt="">REGISTER NOW</a>
-        </div>
-        <div class="col-md-4 col-sm-4 col-xs-12">
-            <p class="title-reg">FULL PARTICIPANT</p>
-            <p><span>$800</span>Early Registration prior to and until 31 July, 2015</p>
-            <p><span class="color-grey">$950</span>Regular Registration From 1 August, until 13 October, 2015</p>
-            <p><span class="color-grey">$1,100</span>On-site Registration</p>
-            <a href="#" class="btn-green" alt="">REGISTER NOW</a>
-        </div>
+        <?php
+        global $post;
+        $args = array('post_type' => 'registrations', 'numberposts' => 3);
+        $posts = get_posts($args);
+        foreach ($posts as $post) {
+            setup_postdata($post);
+            $data = get_post_meta(($post->ID), '', true);
+            ?>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                <p class="title-reg"><?php the_title() ?></p>
+                <p><span class="color-grey"><?php echo $data['price_1']['0'] ?></span><?php echo $data['text_for_price_1']['0'] ?></p>
+                <p><span class="color-grey"><?php echo $data['price_2']['0'] ?></span><?php echo $data['text_for_price_2']['0'] ?></p>
+                <p><span class="color-blue"><?php echo $data['price_3']['0'] ?></span><?php echo $data['text_for_price_3']['0'] ?></p>
+                <a href="#" class="btn-green" alt="">REGISTER NOW</a>
+            </div>
+            <?php
+        }
+        ?>
+
     </div>
     <div class="row">
-        <div class="col-md-4 col-sm-4 col-xs-12">
-            <p class="bold">Registration Fee includes:</p>
+        <div class="col-md-4 col-sm-4 col-xs-12 bold">
+            <?php echo $options['left_text'] ?>
         </div>
         <div class="col-md-8 col-sm-8 col-xs-12">
-            <ul>
-                <li><p>Admission to all scientific sessions</p></li>
-                <li><p>Industry exhibition</p></li>
-                <li><p>Congress material</p></li>
-                <li><p>Coffee & lunch breaks</p></li>
-                <li><p>Optional: One on One meetings with KOL - pre-scheduled upon request</p></li>
-            </ul>
+            <?php echo $options['right_text'] ?>
         </div>
     </div>
 </div>
@@ -183,86 +302,125 @@ $carousel = get_posts($carousel_args);
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="col-md-8 col-centered">  
                 <ul id="tabs-bottom" class="nav nav-tabs" role="tablist">
-                    <li class="col-md-3 active"><a href="#getting" aria-controls="getting" role="tab" data-toggle="tab">GETTING AROUND</a></li>
-                    <li class="col-md-3"><a href="#city" aria-controls="city" role="tab" data-toggle="tab">CITY SIGHTSEEING</a></li>
-                    <li class="col-md-3"><a href="#conference" aria-controls="conference" role="tab" data-toggle="tab">CONFERENCE LOCATION</a></li>
-                    <li class="col-md-3"><a href="#arrival" aria-controls="arrival" role="tab" data-toggle="tab">ARRIVAL FROM AIRPORT</a></li>
+                    <li class="col-md-3 active">
+                        <a href="<?php echo '#' . $options['id_item_menu_1'] ?>" aria-controls="getting" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_1'] ?></a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="<?php echo '#' . $options['id_item_menu_2'] ?>" aria-controls="city" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_2'] ?></a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="<?php echo '#' . $options['id_item_menu_3'] ?>" aria-controls="conference" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_3'] ?></a>
+                    </li>
+                    <li class="col-md-3">
+                        <a href="<?php echo '#' . $options['id_item_menu_4'] ?>" aria-controls="arrival" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_4'] ?></a>
+                    </li>
                 </ul>
             </div>    
         </div>      
     </div>
     <div class="tab-content">  
-        <div role="tabpanel" class="tab-pane fade in active" id="getting">    
+        <div role="tabpanel" class="tab-pane fade in active" id="<?php echo $options['id_item_menu_1'] ?>">    
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p id="caption-wts">WELCOME TO SINGAPORE</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commodo dignissim lacus ac scelerisque nsus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
+                    <p id="caption-wts"><?php echo $options['content_text_top_1'] ?></p>
+                    <?php echo $options['main_content_1'] ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <a href="#" class="btn-blue" alt="">READ MORE</a>
-                    <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
+                    <a href="<?php echo $options['read_more_button_one'] ?>" class="btn-blue" alt=""><?php echo __('READ MORE') ?></a>
+                    <a href="<?php echo $options['another_button_one'] ?>" class="btn-blue" alt=""><?php echo __('ANOTHER CTA BUTTON') ?></a>
                 </div>
             </div> 
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="city">    
+        <div role="tabpanel" class="tab-pane fade" id="<?php echo $options['id_item_menu_2'] ?>">    
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <p id="caption-wts">City</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commodo dignissim lacus ac scelerisque nsus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
+                    <p id="caption-wts"><?php echo $options['content_text_top_2'] ?></p>
+                    <?php echo $options['main_content_2'] ?>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                    <a href="#" class="btn-blue" alt="">READ MORE</a>
-                    <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
+                    <a href="<?php echo $options['read_more_button_two'] ?>" class="btn-blue" alt=""><?php echo __('READ MORE') ?></a>
+                    <a href="<?php echo $options['another_button_two'] ?>" class="btn-blue" alt=""><?php echo __('ANOTHER CTA BUTTON') ?></a>
                 </div>
             </div> 
-        </div> 
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="<?php echo $options['id_item_menu_3'] ?>">    
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p id="caption-wts"><?php echo $options['content_text_1'] ?></p>
+                    <?php echo $options['main_content_3'] ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <a href="<?php echo $options['read_more_button_three'] ?>" class="btn-blue" alt=""><?php echo __('READ MORE') ?></a>
+                    <a href="<?php echo $options['another_button_three'] ?>" class="btn-blue" alt=""><?php echo __('ANOTHER CTA BUTTON') ?></a>
+                </div>
+            </div> 
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="<?php echo $options['id_item_menu_4'] ?>">    
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p id="caption-wts"><?php echo $options['content_text_2'] ?></p>
+                    <?php echo $options['main_content_4'] ?>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <a href="<?php echo $options['read_more_button_four'] ?>" class="btn-blue" alt=""><?php echo __('READ MORE') ?></a>
+                    <a href="<?php echo $options['another_button_four'] ?>" class="btn-blue" alt=""><?php echo __('ANOTHER CTA BUTTON') ?></a>
+                </div>
+            </div> 
+        </div>
     </div>
 </div>
 <div class="container-fluid" id="bioevents-contacts">
     <div class="row">
         <div class="col-md-offset-1 col-md-3 col-sm-4 col-xs-12 text-align-center">
             <a href="#" class="logo">
-                <img src="<?php echo get_template_directory_uri() ?>/img/logo_bioevents.png" alt="Website" />
+                <img src="<?php echo $options['logo']['url'] ?>" alt="<?php echo $options['logo']['alt'] ?>">
             </a>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-6 border-left-blue">
-            <p>BioEvents UK</p>
-            <p>UK Office</p>
-            <p>Tel: +44-203-051-4032</p>
-            <p>email: info@bioevents.net</p>
+            <p><?php echo $options['name_for_one'] ?></p>
+            <p><?php echo $options['office_for_one'] ?></p>
+            <p><?php echo $options['telephone_for_one'] ?></p>
+            <p><?php echo $options['email_for_one'] ?></p>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-6">
-            <p>BioEvents USA</p>
-            <p>Boston Office</p>
-            <p>Tel: + 1-857-400-0035</p>
-            <p>Fax: +44-203-051-4032</p>
+            <p><?php echo $options['name'] ?></p>
+            <p><?php echo $options['office'] ?></p>
+            <p><?php echo $options['telephone'] ?></p>
+            <p><?php echo $options['email'] ?></p>
         </div>
     </div>
 </div>
 <div class="container-fluid" id="rights">
     <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
-            <p>© Congress Name. All Rights Reserved 2015</p>
+            <p><?php echo $options['copyright'] ?></p>
         </div>
     </div>
 </div>
 <!-- pop-ups -->
-<div class="container-fluid main-popup 382">
-    <div class="row">
-        <div class="col-md-8 popup col-centered">
-            <div class="col-md-4 image"><img src="<?php echo get_template_directory_uri() ?>/images/face.png"></div>
-            <div class="col-md-8 text">
-                <p class="name">First Name LastName</p>
-                <p class="spec">Specialization NameTitle, Country</p>
-                <p class="name bio">Bio:</p>
-                <p>"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p></div>
-            <a class="close-popup">Close X</a>
+<?php
+global $post;
+$args = array('post_type' => 'speakers', 'numberposts' => -1);
+$posts = get_posts($args);
+foreach ($posts as $post) {
+    setup_postdata($post);
+    ?>
+    <div class="container-fluid main-popup <?php the_ID() ?>">
+        <div class="row">
+            <div class="col-md-8 popup col-centered">
+                <div class="col-md-4 image"><?php the_post_thumbnail() ?></div>
+                <?php the_content() ?>    
+                <a class="close-popup">Close X</a>
+            </div>
         </div>
     </div>
-</div>
-
+<?php } ?>
 <?php get_footer(); ?>

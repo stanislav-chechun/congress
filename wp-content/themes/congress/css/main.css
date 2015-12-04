@@ -169,6 +169,219 @@ html, body{
     float: none;
     margin: 0 auto;
 }
+#welcome-first{
+    background: url(../img/bg_bottom_block.png);
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    font-size: 2vmax;
+    height: 100%;
+}
+
+#welcome-first{
+    padding: 0;
+}
+
+#welcome-first #top-first {
+    font-size: 36px;
+    padding: 12px 0;
+    margin: 40px 0px 10px 0px;
+    color: #fff;
+    background-color: #478adf;
+    display: table;
+    width: 100%;
+}
+
+#date-first{
+    border-left-color: white;
+    border-left-style: solid;
+    border-width: 4px;
+    text-align: left;
+}
+
+#border-first{
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    margin:5px;
+    position: absolute;
+    right: 5px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+}
+
+#welcome-first #bottom-first {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#register-now{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px 40px;
+    border: 3px solid white;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+a #register-now :hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+}
+
+#welcome-to-name-congress{
+	min-height: 100%;
+	background: #F1F2F6;
+}
+#welcome-to-name-congress ul{
+	margin-bottom: 0;
+}
+#welcome-to-name-congress li{
+	display: inline-block;
+}
+#welcome-to-name-congress div.row:first-child{
+	background: #448CCB;
+	text-align: center;
+	padding: 1.5%;
+}
+#welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a{
+	font-size: 2.3vh;
+}
+#welcome-to-name-congress div.row:nth-child(1) a{
+	position: relative;
+}
+#welcome-to-name-congress div.row:first-child a:hover:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 5px solid #8AC0E5;
+	/*position: relative;*/
+	position: absolute;
+	left: 40%;
+	bottom: -21px;
+	text-decoration: none;
+}
+#welcome-to-name-congress div.row:nth-child(2){
+	background: #8AC0E5;
+	text-align: center;
+	padding: 1%;
+}
+#welcome-to-name-congress div.row:nth-child(2) a:hover{
+	color: #D1E3FB;
+}
+#welcome-to-name-congress a{
+	color: #fff;
+}
+#welcome-to-name-congress a:hover{
+	text-decoration: none;
+}
+#welcome-to-name-congress div.row:nth-child(3){
+	padding: 0 10%;
+}
+#welcome-to-name-congress div.row:nth-child(3) p:not(#caption-wtnc){
+	color: #4D4D4D;
+	font-size: 1.4vmax;
+	margin-right: 5%;
+}
+#caption-wtnc{
+	color: #448CCB;
+	text-align: center;
+	font-size: 2.4vmax;
+	margin: 2% 0;
+}
+.carousel-control{
+	opacity: 1 !important;
+	position: absolute;
+	width: 0 !important;
+}
+.carousel-control.right, .carousel-control.left{
+	background-image: none !important; 
+}
+.carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right{
+	position: absolute;
+    top: 45%;
+    text-shadow: none;
+    color: #448CCB;
+    font-size: 3.3vmax;
+}
+.carousel-control .glyphicon-menu-left:hover, .carousel-control .glyphicon-menu-right:hover{
+	color: #8AC0E5;
+}
+.carousel-inner>.item img{
+    margin: 0 auto;
+    max-width: 482px;
+}
+#carousel-example-generic{
+	max-width: 482px;
+}
+.light-box{
+	pointer-events: none;
+	display: block;
+}
+.light-box:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 70px solid #478ADF; 
+	border-right: 70px solid transparent;	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-decoration: none;
+	z-index: 10000;
+	display: block;
+	pointer-events: all;
+}
+.light-box:hover:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 70px solid #8AC0E5; 
+	border-right: 70px solid transparent;	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-decoration: none;
+	z-index: 10000;
+	display: block;
+	pointer-events: all;
+}
+.carousel-control .glyphicon-menu-left{
+	margin-left: -40px;
+	left: 0;
+}
+.carousel-control .glyphicon-menu-right{
+	margin-right: -40px;
+	right: 0;
+}
+#buttons-block{
+	text-align: center;
+	margin-top: 4%;
+}
+.btn-blue{
+	background: #448CCB;
+	padding: 5px 20px;
+	white-space: nowrap;
+	font-size: 1.6vmax;
+	margin: 1%;
+	display: inline-block;
+}
+.btn-blue:hover{
+	background: #8AC0E5;
+}
+.item span{
+	z-index: 1000;
+	position: relative;
+	display: block;
+}
 /* Registration */
 
 #registration-block{
@@ -622,15 +835,18 @@ a{
     height: 100%;
     color:#fff;
     display: none;
+    z-index: 999;
 }
 .main-popup .row{
-    margin-top: 140px;
+    margin-top: 50px;
 }
 .main-popup .row img{
     min-height: 230px;
     border: 5px solid #fff;
     margin: 0 auto;
     display: block;
+    width: 100%;
+    height: auto;
 }
 .main-popup .row p{
   font-family: robotothin;
@@ -654,8 +870,24 @@ a{
     text-transform: uppercase;
     font-size: 18px;
     font-family: robotolight;
+    cursor:pointer;
 }
 .popup .text{
     font-size: 25px;
     line-height: 28px;
+}
+#welcome-to-singapore .nav-tabs{
+    border-bottom: none;
+}
+#welcome-to-singapore .nav-tabs > li > a{
+    border: none;
+}
+#welcome-to-singapore .nav-tabs > li.active > a{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+}
+#welcome-to-singapore .nav-tabs > li > a:hover{
+    border: none;
+    background-color: transparent;
 }
