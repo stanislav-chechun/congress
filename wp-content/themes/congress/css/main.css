@@ -282,6 +282,7 @@ html, body{
 }
 #welcome-to-name-congress li{
 	display: inline-block;
+    padding: 0 8px;
 }
 #welcome-to-name-congress div.row:first-child{
 	background: #448CCB;
@@ -289,137 +290,206 @@ html, body{
 	padding: 1.5%;
 }
 #welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a{
-	font-size: 2.3vh;
+    font-size: 18px;
 }
 #welcome-to-name-congress div.row:nth-child(1) a{
-	position: relative;
+    position: relative;
 }
 #welcome-to-name-congress div.row:first-child a:hover:after{
-	content: "";
-	width: 0;
-	height: 0;
-	border-left: 10px solid transparent;
-	border-right: 10px solid transparent;
-	border-bottom: 5px solid #8AC0E5;
-	/*position: relative;*/
-	position: absolute;
-	left: 40%;
-	bottom: -21px;
-	text-decoration: none;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 5px solid #8AC0E5;
+    /*position: relative;*/
+    position: absolute;
+    left: 40%;
+    bottom: -21px;
+    text-decoration: none;
 }
 #welcome-to-name-congress div.row:nth-child(2){
-	background: #8AC0E5;
-	text-align: center;
-	padding: 1%;
+    background: #8AC0E5;
+    text-align: center;
+    padding: 1%;
 }
 #welcome-to-name-congress div.row:nth-child(2) a:hover{
-	color: #D1E3FB;
+    color: #D1E3FB;
 }
 #welcome-to-name-congress a{
-	color: #fff;
+    color: #fff;
 }
 #welcome-to-name-congress a:hover{
-	text-decoration: none;
+    text-decoration: none;
 }
 #welcome-to-name-congress div.row:nth-child(3){
-	padding: 0 10%;
+    padding: 0 10%;
 }
 #welcome-to-name-congress div.row:nth-child(3) p:not(#caption-wtnc){
-	color: #4D4D4D;
-	font-size: 1.4vmax;
-	margin-right: 5%;
+    color: #4D4D4D;
+    font-size: 22px;
 }
 #caption-wtnc{
-	color: #448CCB;
-	text-align: center;
-	font-size: 2.4vmax;
-	margin: 2% 0;
+    color: #448CCB;
+    text-align: center;
+    font-size: 38px;
+    margin: 2% 0;
 }
 .carousel-control{
-	opacity: 1 !important;
-	position: absolute;
-	width: 0 !important;
+    opacity: 1 !important;
+    position: absolute;
+    width: 0 !important;
 }
 .carousel-control.right, .carousel-control.left{
-	background-image: none !important; 
+    background-image: none !important; 
 }
 .carousel-control .glyphicon-menu-left, .carousel-control .glyphicon-menu-right{
-	position: absolute;
+    position: absolute;
     top: 45%;
     text-shadow: none;
     color: #448CCB;
-    font-size: 3.3vmax;
+    font-size: 40px;
 }
 .carousel-control .glyphicon-menu-left:hover, .carousel-control .glyphicon-menu-right:hover{
-	color: #8AC0E5;
+    color: #8AC0E5;
+}
+.item{
+    padding: 0;
+    margin: 0 auto;
 }
 .carousel-inner>.item img{
     margin: 0 auto;
-    max-width: 482px;
+    /*max-width: 482px;*/
+    width: 100%;
 }
 #carousel-example-generic{
-	max-width: 482px;
+    padding: 7px 5% 0;
 }
 .light-box{
-	pointer-events: none;
-	display: block;
+    pointer-events: none;
+    display: block;
 }
 .light-box:after{
-	content: "";
-	width: 0;
-	height: 0;
-	border-bottom: 70px solid #478ADF; 
-	border-right: 70px solid transparent;	
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	text-decoration: none;
-	z-index: 10000;
-	display: block;
-	pointer-events: all;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #478ADF; 
+    border-right: 100px solid transparent;  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    z-index: 10000;
+    display: block;
+    pointer-events: all;
 }
 .light-box:hover:after{
-	content: "";
-	width: 0;
-	height: 0;
-	border-bottom: 70px solid #8AC0E5; 
-	border-right: 70px solid transparent;	
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	text-decoration: none;
-	z-index: 10000;
-	display: block;
-	pointer-events: all;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #8AC0E5; 
+    border-right: 100px solid transparent;  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-decoration: none;
+    z-index: 10000;
+    display: block;
+    pointer-events: all;
 }
 .carousel-control .glyphicon-menu-left{
-	margin-left: -40px;
-	left: 0;
+    margin-left: -15px;
+    left: 0;
 }
 .carousel-control .glyphicon-menu-right{
-	margin-right: -40px;
-	right: 0;
+    margin-right: -15px;
+    right: 0;
 }
 #buttons-block{
-	text-align: center;
-	margin-top: 4%;
+    text-align: center;
+    margin-top: 2%;
 }
 .btn-blue{
-	background: #448CCB;
-	padding: 5px 20px;
-	white-space: nowrap;
-	font-size: 1.6vmax;
-	margin: 1%;
-	display: inline-block;
+    background: #448CCB;
+    padding: 5px 20px;
+    white-space: nowrap;
+    font-size: 20px;
+    margin: 1%;
+    display: inline-block;
 }
 .btn-blue:hover{
-	background: #8AC0E5;
+    background: #8AC0E5;
 }
 .item span{
-	z-index: 1000;
-	position: relative;
-	display: block;
+    z-index: 1000;
+    position: relative;
+    display: block;
 }
+
+@media screen and (max-width: 1440px) {
+    #welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a {
+        font-size: 14px;
+    }
+    #welcome-to-name-congress div.row:nth-child(3) p:not(#caption-wtnc) {
+        font-size: 20px;
+    }
+    #caption-wtnc {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #welcome-to-name-congress div.row:nth-child(3) p:not(#caption-wtnc) {
+        font-size: 16px;
+    }
+    .light-box:after{
+        border-bottom: 90px solid #478ADF; 
+        border-right: 90px solid transparent;   
+    }
+    .light-box:hover:after{
+        border-bottom: 90px solid #8AC0E5; 
+        border-right: 90px solid transparent;   
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #caption-wtnc {    
+        font-size: 26px;    
+    }
+    #welcome-to-name-congress div.row:nth-child(3) p:not(#caption-wtnc) {
+        font-size: 14px;
+    }
+    .btn-blue {
+        font-size: 18px;
+    }
+    .light-box:after{
+        border-bottom: 80px solid #478ADF; 
+        border-right: 80px solid transparent;   
+    }
+    .light-box:hover:after{
+        border-bottom: 80px solid #8AC0E5; 
+        border-right: 80px solid transparent;   
+    }
+}
+@media screen and (max-width: 480px) {
+    .btn-blue {
+        font-size: 16px;
+    }
+    .light-box:after{
+        border-bottom: 60px solid #478ADF; 
+        border-right: 60px solid transparent;   
+    }
+    .light-box:hover:after{
+        border-bottom: 60px solid #8AC0E5; 
+        border-right: 60px solid transparent;   
+    }
+}
+
+
+
+
+
+
 /* Registration */
 
 #registration-block{
