@@ -8,28 +8,28 @@ $carousel = get_posts($carousel_args);
 <div class="container-fluid" id="welcome-first">
     <div id="border-first"></div>
     <div class="row" id="top-first">
-        <div class="col-md-8 col-sm-8 col-xs-8">
+        <div class="col-md-7 col-sm-7 col-xs-7">
             <div id="text-first">
-                <h1>The International Congress on </h1>
-                <strong>Clinicals Trial for Medical Devices</strong>
+                <h1>The International Congress on
+                <strong>Clinical Trials for Medical Devices</strong></h1>
             </div>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4" id="date-first">
-            <p>26 AUG 2015</p>
-            <strong>Cityname, Singapore</strong>
+            <h2><strong>26 AUG</strong> 2015
+            CityName, <strong>Singapore</strong></h2>
         </div>
 
     </div>
 
     <div class="row" id="bottom-first">
-        <div class="col-md-8 col-sm-8 col-xs-8" id="dynamic-links">
+        <div class="col-md-6 col-sm-6 col-xs-6" id="dynamic-links">
             <ul class="list-inline">
                 <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/calendar.png" alt="Calendar" /></a></li>
                 <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/mail.png" alt="Mail" /></a></li>
                 <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="Map" /></a></li>
             </ul> 
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4" id="button-first">
+        <div class="col-md-6 col-sm-6 col-xs-6" id="button-first">
             <a href="#" class="button" id="register-now">Register now</a>
         </div>
 

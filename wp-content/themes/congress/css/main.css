@@ -165,6 +165,18 @@ a:hover,a:focus{
 html, body{
     height: 100%;
 }
+
+#text-first h1{
+    font-size: 40px;
+    width: 81%;
+    text-align: left;
+    line-height: 46px;
+    margin-left: 20%;
+}
+#text-first strong{
+     font-family: 'robotobold';
+     display: block;
+}
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -184,8 +196,8 @@ html, body{
 
 #welcome-first #top-first {
     font-size: 36px;
-    padding: 12px 0;
-    margin: 40px 0px 10px 0px;
+    padding: 17px 0 18px;
+    margin: 50px 0px 10px 0px;
     color: #fff;
     background-color: #478adf;
     display: table;
@@ -195,14 +207,25 @@ html, body{
 #date-first{
     border-left-color: white;
     border-left-style: solid;
-    border-width: 4px;
+    border-width: 2px;
     text-align: left;
+    padding: 20px 0 16px;
+    margin-left: 2.7%;
+    margin-top: 2px;
 }
-
+#date-first h2{
+    font-size: 26px;
+    line-height: 26px;
+    width: 10em;
+    margin-left: 11.2%
+}
+#date-first strong{
+     font-family: 'robotobold';
+}
 #border-first{
     border-color: white;
     border-style: solid;
-    border-width: 2px;
+    border-width: 3px;
     margin:5px;
     position: absolute;
     right: 5px;
@@ -216,23 +239,38 @@ html, body{
     width: 100%;
     bottom: 0;
 }
+#dynamic-links{
+    text-align: center;
+}
 
 #register-now{
     color: #fff;
-    text-align: center;
-    font-size: 30px;
+    font-family: 'robotolight';
+    text-transform: uppercase;
+    font-size: 27px;
     cursor: pointer;
     text-decoration: none;
-    padding: 10px 40px;
-    border: 3px solid white;
-    border-radius: 3px;
+    padding: 13px 55px 18px;
+    border: 2px solid white;
+    margin-left: 7px;
     background-color: rgba(0, 0, 0, 0.1);
+    letter-spacing: .5px;
 }
-a #register-now :hover {
-    opacity: 0.7;
-    filter: alpha(opacity=70);
+#button-first{
+    margin-top: 16px;
+    text-align: center;
+}
+#register-now:hover {
+    font-family: 'robotoblack';
+    font-size: 31px;
+    padding: 14px 62px 20px 63px;
+    color: #478adf;
+    background-color: rgba(255, 255, 255, .8);
+    border-color: #478adf;    
+    /*filter: alpha(opacity=70);
     -moz-opacity:0.7;
-    -khtml-opacity: 0.7;
+    -khtml-opacity: 0.7;*/
+
 }
 
 #welcome-to-name-congress{
@@ -890,4 +928,89 @@ a{
 #welcome-to-singapore .nav-tabs > li > a:hover{
     border: none;
     background-color: transparent;
+}
+
+/****************my************/
+.list-inline{
+    margin-right: 8%;
+}
+.list-inline > li{
+    vertical-align: middle;
+    margin: 0 20px;
+}
+.list-inline > li:last-child{
+    margin-left: 12px;
+}
+#welcome-first #bottom-first{
+    bottom: 52px;
+}
+
+
+/****************MEDIA********MEDIA*********MEDIA********MEDIA*******MEDIA*************/
+@media (max-width: 1355px){
+    #text-first h1{
+        margin-left: 4%;
+        width: 97%;
+    }
+}
+@media (max-width: 1145px){
+    #text-first h1{
+        width: 100%;
+        font-size: 34px;
+    }
+    #date-first h2{
+        font-size: 24px;
+    }
+}
+@media (max-width: 1024px){
+    #text-first h1{
+        font-size: 27px;
+    }
+     #date-first h2{
+        font-size: 20px;
+    }
+    #register-now{
+        padding: 7px 32px;
+        font-size: 26px;
+    }
+    #register-now:hover{
+       font-size: 28px;
+       padding: 8px 44px 9px 45px;
+    }
+    .list-inline img{
+        width: 85%;
+    }    
+}
+@media (max-width: 768px){
+    #text-first h1{
+        font-size: 20px;
+        margin-left: 1%;
+    }
+     #date-first h2{
+        font-size: 18px;
+    }
+    #register-now{
+        font-size: 20px;
+    }
+    #register-now:hover{
+       font-size: 22px;
+       padding: 8px 34px 9px 35px;
+    }
+    .list-inline img{
+        width: 70%;
+    } 
+    .list-inline li{
+        margin: 0 6px;
+    }   
+    .list-inline{
+        margin: 0;
+    }
+}
+@media (max-width: 590px){
+    #text-first h1{
+        
+    }
+     #date-first h2{
+        
+    }
 }
