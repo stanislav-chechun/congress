@@ -254,7 +254,7 @@ function congress_registration_data($post_id) {
     $args = array('post_type' => 'registrations', 'numberposts' => 3);
     $posts = get_posts($args);
     ?>
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-md-4 col-sm-6 col-xs-12">
         <p class="title-reg"><?php echo get_the_title($post_id) ?></p>
         <?php
         $i=0;
