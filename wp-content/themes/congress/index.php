@@ -273,17 +273,9 @@ $carousel = get_posts($carousel_args);
         $args = array('post_type' => 'registrations', 'numberposts' => 3);
         $posts = get_posts($args);
         foreach ($posts as $post) {
+          
             setup_postdata($post);
-            $data = get_post_meta(($post->ID), '', true);
-            ?>
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <p class="title-reg"><?php the_title() ?></p>
-                <p><span class="color-grey"><?php echo $data['price_1']['0'] ?></span><?php echo $data['text_for_price_1']['0'] ?></p>
-                <p><span class="color-grey"><?php echo $data['price_2']['0'] ?></span><?php echo $data['text_for_price_2']['0'] ?></p>
-                <p><span class="color-blue"><?php echo $data['price_3']['0'] ?></span><?php echo $data['text_for_price_3']['0'] ?></p>
-                <a href="#" class="btn-green" alt="">REGISTER NOW</a>
-            </div>
-            <?php
+            congress_registration_data($post->ID);
         }
         ?>
 

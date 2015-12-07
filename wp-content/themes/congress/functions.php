@@ -1,5 +1,4 @@
 <?php
-
 add_action('admin_init', 'my_remove_menu_pages');
 add_action('wp_dashboard_setup', 'remove_dashboard_widgets');
 add_action('wp_before_admin_bar_render', 'remove_admin_bar_links');
@@ -170,7 +169,7 @@ function registration_post_type() {
         'label' => __('Registrations', 'congress'),
         'description' => __('Registrations', 'congress'),
         'labels' => $labels,
-        'supports' => array('title','revisions'),
+        'supports' => array('title', 'revisions'),
         'taxonomies' => array(),
         'hierarchical' => false,
         'public' => true,
@@ -187,6 +186,7 @@ function registration_post_type() {
     );
     register_post_type('registrations', $args);
 }
+
 function sponsorships_post_type() {
 
     $labels = array(
@@ -213,7 +213,7 @@ function sponsorships_post_type() {
         'label' => __('Sponsorships', 'congress'),
         'description' => __('Sponsorships', 'congress'),
         'labels' => $labels,
-        'supports' => array('title','thumbnail'),
+        'supports' => array('title', 'thumbnail'),
         'taxonomies' => array(),
         'hierarchical' => false,
         'public' => true,
@@ -229,4 +229,53 @@ function sponsorships_post_type() {
         'capability_type' => 'post',
     );
     register_post_type('sponsorships', $args);
+}
+
+function congress_registration_data($post_id) {
+    $date_arr = array();
+    $data = get_post_meta($post_id);
+    foreach ($data as $date => $key) {
+        $findme = 'date_';
+        $pos = strpos($date, $findme);
+        if ($pos) {
+            $date_arr[$date] = strtotime(get_post_meta($post_id, substr($date, 1), true));
+        }
+    }
+    foreach ($date_arr as $time => $key) {
+        $current = strtotime("now");
+        $tot = $key - $current;
+        if ($tot > 0) {
+            $time_arr[$time] = $tot;
+        }
+    }
+    $min = min($time_arr);
+    $key_min = array_search($min, $time_arr);
+    $blue = preg_replace("/[^0-9]/", '', $key_min);
+    $args = array('post_type' => 'registrations', 'numberposts' => 3);
+    $posts = get_posts($args);
+    ?>
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <p class="title-reg"><?php echo get_the_title($post_id) ?></p>
+        <?php
+        $i=0;
+        $data = get_post_meta($post_id, '', true);
+        foreach ($date_arr as $time) {
+            $i++;
+            $price = 'price_' . $i;
+            $text = 'text_for_price_' . $i;
+            ?>
+            <?php if ($i == $blue) {
+                ?>
+                <p><span class="color-blue"><?php echo $data[$price]['0'] ?></span><?php echo $data[$text]['0'] ?></p>
+                <?php
+            } else {
+                ?>
+                <p><span class="color-grey"><?php echo $data[$price]['0'] ?></span><?php echo $data[$text]['0'] ?></p>
+                <?php
+            }
+        }
+        ?>
+        <a href="#" class="btn-green" alt="">REGISTER NOW</a>
+    </div>
+    <?php
 }
