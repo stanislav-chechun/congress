@@ -8,13 +8,13 @@ $carousel = get_posts($carousel_args);
 <div class="container-fluid" id="welcome-first" style="background-image: url(<?php echo $options['main_image']['url'] ?>);">
     <div id="border-first"></div>
     <div class="row" id="top-first">
-        <div class="col-md-7 col-sm-7 col-xs-7">
+        <div class="col-md-7 col-sm-7 col-xs-7 mobile">
             <div id="text-first">
                 <h1><?php echo $options['header_text_top'] ?>
                     <strong><?php echo $options['header_text_bottom'] ?></strong></h1>
             </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-xs-4" id="date-first">
+        <div class="col-md-4 col-sm-4 col-xs-4 mobile" id="date-first">
             <h2><?php
                 $originalDate = $options['date'];
                 echo sprintf('<strong>%s</strong> %s', date('d M', strtotime($originalDate)), date(' Y ', strtotime($originalDate)));
@@ -132,7 +132,7 @@ $carousel = get_posts($carousel_args);
             <p>Lorem ipsum dolor sit amet, consectetur adip-iscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commondo dignissim lacus, ac scelerisque risus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
             <p>It tincidunt nulla finibus a. Nunc turpis odio, luctus sit amet elementum in, ultricies et urna. Ut vel felis at justo suscipit efficitur nec sit amet orci. Aliquam auctor nibh et soiiicitudin porta. Aenean bibendum dolor vitae odio lacinia tempus. Morbi luctus risus in mollis</p>
         </div>
-        <div class="col-md-7 col-sm-12 col-xs-12">
+        <div class="col-md-7 col-sm-12 col-xs-12 slider">
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">

@@ -456,7 +456,7 @@ html, body{
         font-size: 26px;    
     }
     #welcome-to-name-congress div.row:nth-child(3) p:not(#caption-wtnc) {
-        font-size: 14px;
+        font-size: 18px;
     }
     .btn-blue {
         font-size: 18px;
@@ -468,6 +468,26 @@ html, body{
     .light-box:hover:after{
         border-bottom: 80px solid #8AC0E5; 
         border-right: 80px solid transparent;   
+    }
+    #welcome-to-name-congress{
+        padding-bottom: 60px;
+    }
+    #carousel-example-generic{
+        margin-top: 25px;
+    }
+    #buttons-block{
+        margin-top: 30px;
+    }
+   #welcome-to-name-congress div.row{
+    padding-top: 25px !important;
+    padding-bottom: 15px !important;
+    }
+    #welcome-to-name-congress div.row:nth-child(3){
+        padding: 0;
+        text-align: center;
+    }
+    #welcome-to-name-congress .slider{
+     display: none;   
     }
 }
 @media screen and (max-width: 480px) {
@@ -1074,12 +1094,70 @@ a{
     .list-inline{
         margin: 0;
     }
+    #welcome-to-name-congress div.row:first-child a:hover:after{
+        display: none;
+    }
 }
 @media (max-width: 590px){
-    #text-first h1{
-        
+    #top-first .mobile{
+        width: 100%;
+        border: none;
+        margin: 0;
     }
-     #date-first h2{
-        
+    #top-first .mobile h1{
+        text-align: center;
+        font-size: 32px;
+        padding: 15px;
     }
+    #top-first .mobile h2{
+        text-align: center;
+        font-size: 24px;
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+    #dynamic-links,#button-first{
+        width: 100%;
+    }
+    #bottom-first{
+        margin: 0;
+    }
+    #button-first{
+        margin: 0;
+        margin-top: 30px;
+    }
+    #button-first a{
+        font-size: 28px;
+        margin: 0;
+    }
+    #button-first a:hover{
+        font-size: 32px;
+    }
+        #welcome-to-name-congress li{
+            width: 100%;
+            padding-bottom: 20px;
+    }
+    #welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a{
+        font-size: 16px;
+    }
+
+}
+@media (max-width: 400px){
+   #top-first .mobile h1{
+        font-size: 24px;
+    }
+    #top-first .mobile h2{
+        text-align: center;
+        font-size: 16px;
+    }
+    #button-first{
+        margin-top: 25px;
+    }
+    #button-first a{
+        font-size: 16px;
+    }
+    #button-first a:hover{
+        font-size: 24px;
+    }
+
 }
