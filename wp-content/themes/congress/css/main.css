@@ -174,8 +174,8 @@ html, body{
     margin-left: 20%;
 }
 #text-first strong{
-     font-family: 'robotobold';
-     display: block;
+    font-family: 'robotobold';
+    display: block;
 }
 .col-centered{
     float: none;
@@ -219,7 +219,7 @@ html, body{
     margin-left: 11.2%
 }
 #date-first strong{
-     font-family: 'robotobold';
+    font-family: 'robotobold';
 }
 #border-first{
     border-color: white;
@@ -273,20 +273,20 @@ html, body{
 }
 
 #welcome-to-name-congress{
-	min-height: 100%;
-	background: #F1F2F6;
+    min-height: 100%;
+    background: #F1F2F6;
 }
 #welcome-to-name-congress ul{
-	margin-bottom: 0;
+    margin-bottom: 0;
 }
 #welcome-to-name-congress li{
-	display: inline-block;
+    display: inline-block;
     padding: 0 8px;
 }
 #welcome-to-name-congress div.row:first-child{
-	background: #448CCB;
-	text-align: center;
-	padding: 1.5%;
+    background: #448CCB;
+    text-align: center;
+    padding: 1.5%;
 }
 #welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a{
     font-size: 18px;
@@ -469,25 +469,14 @@ html, body{
         border-bottom: 80px solid #8AC0E5; 
         border-right: 80px solid transparent;   
     }
+    #welcome-to-singapore li{
+        width: 100%;
+        border-right: none !important;;
+    }
     #welcome-to-name-congress{
-        padding-bottom: 60px;
-    }
-    #carousel-example-generic{
-        margin-top: 25px;
-    }
-    #buttons-block{
-        margin-top: 30px;
-    }
-   #welcome-to-name-congress div.row{
-    padding-top: 25px !important;
-    padding-bottom: 15px !important;
-    }
-    #welcome-to-name-congress div.row:nth-child(3){
-        padding: 0;
-        text-align: center;
-    }
-    #welcome-to-name-congress .slider{
-     display: none;   
+     height: auto;
+    padding-bottom: 40px;
+    min-height: inherit;
     }
 }
 @media screen and (max-width: 480px) {
@@ -539,7 +528,7 @@ html, body{
     margin-bottom: 28px
 }
 #registration-block .row:nth-child(2) p:first-child{
-    font-size: 1.7vmax;
+    font-size: 24px;
     font-weight: bold;
     border-bottom: 1px solid #A9BAC2;
 }
@@ -704,6 +693,8 @@ a{
     border-left: 6px solid #fff;
     border-top: 3px solid #fff;
     border-bottom: 3px solid #fff;
+    width: 100%;
+    height: auto;
 }
 #speakers-block .speaker .helper{
     display: inline-block;
@@ -968,7 +959,6 @@ a{
     margin-top: 50px;
 }
 .main-popup .row img{
-    min-height: 230px;
     border: 5px solid #fff;
     margin: 0 auto;
     display: block;
@@ -976,8 +966,8 @@ a{
     height: auto;
 }
 .main-popup .row p{
-  font-family: robotothin;
- font-size: 25px; 
+    font-family: robotothin;
+    font-size: 25px; 
 }
 .main-popup .row .bio{
     margin: 25px 0;
@@ -1055,7 +1045,7 @@ a{
     #text-first h1{
         font-size: 27px;
     }
-     #date-first h2{
+    #date-first h2{
         font-size: 20px;
     }
     #register-now{
@@ -1063,27 +1053,42 @@ a{
         font-size: 26px;
     }
     #register-now:hover{
-       font-size: 28px;
-       padding: 8px 44px 9px 45px;
+        font-size: 28px;
+        padding: 8px 44px 9px 45px;
     }
     .list-inline img{
         width: 85%;
-    }    
+    }
+    .main-popup .popup{
+        width: 100%;
+    }
+        .owl-controls{
+        display: none;
+    }
 }
+@media (max-width: 980px){
+    .main-popup .row img {
+        width: 230px;
+    }
+}    
+
 @media (max-width: 768px){
+    #registration-block .row:nth-child(2) p:first-child{
+     font-size: 18px;   
+    }
     #text-first h1{
         font-size: 20px;
         margin-left: 1%;
     }
-     #date-first h2{
+    #date-first h2{
         font-size: 18px;
     }
     #register-now{
         font-size: 20px;
     }
     #register-now:hover{
-       font-size: 22px;
-       padding: 8px 34px 9px 35px;
+        font-size: 22px;
+        padding: 8px 34px 9px 35px;
     }
     .list-inline img{
         width: 70%;
@@ -1097,11 +1102,7 @@ a{
     #welcome-to-name-congress div.row:first-child a:hover:after{
         display: none;
     }
-    #program-block .nav-tabs li a{
-        display: block;
-            margin-bottom: 15px;
-            padding-bottom: 3px;
-    }
+
 }
 @media (max-width: 590px){
     #top-first .mobile{
@@ -1138,20 +1139,17 @@ a{
     #button-first a:hover{
         font-size: 32px;
     }
-        #welcome-to-name-congress li{
-            width: 100%;
-            padding-bottom: 20px;
+    #welcome-to-name-congress li{
+        width: 100%;
+        padding-bottom: 20px;
     }
     #welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a{
         font-size: 16px;
     }
-    #program-block{
-        
-    }
 
 }
 @media (max-width: 400px){
-   #top-first .mobile h1{
+    #top-first .mobile h1{
         font-size: 24px;
     }
     #top-first .mobile h2{
