@@ -1097,6 +1097,11 @@ a{
     #welcome-to-name-congress div.row:first-child a:hover:after{
         display: none;
     }
+    #program-block .nav-tabs li a{
+        display: block;
+            margin-bottom: 15px;
+            padding-bottom: 3px;
+    }
 }
 @media (max-width: 590px){
     #top-first .mobile{
@@ -1139,6 +1144,9 @@ a{
     }
     #welcome-to-name-congress div.row:nth-child(1) a, #welcome-to-name-congress div.row:nth-child(2) a{
         font-size: 16px;
+    }
+    #program-block{
+        
     }
 
 }

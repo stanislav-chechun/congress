@@ -170,9 +170,9 @@ $carousel = get_posts($carousel_args);
     <h3>Program</h3>
     <div class="col-md-10 col-xs-12 col-centered">
         <ul class="nav nav-tabs" role="tablist">
-            <li class="col-md-4 col-xs-12 active" ><div class="col-md-12 col-xs-12"><a href="#day-1" aria-controls="day-1" role="tab" data-toggle="tab"><span>Day 1#</span></a></div></li>
-            <li class="col-md-4 col-xs-12 " ><div class="col-md-12 col-xs-12"><a href="#day-2" aria-controls="day-2" role="tab" data-toggle="tab"><span>Day 2#</span></a></div></li>
-            <li class="col-md-4 col-xs-12 " ><div class="col-md-12 col-xs-12"><a href="#day-3" aria-controls="day-3" role="tab" data-toggle="tab"><span>Day 3#</span></a></div></li>
+            <li class="col-md-4 col-sm-4  col-xs-12 active" ><div class="col-md-12 col-xs-12"><a href="#day-1" aria-controls="day-1" role="tab" data-toggle="tab"><span>Day 1#</span></a></div></li>
+            <li class="col-md-4 col-sm-4  col-xs-12 " ><div class="col-md-12 col-xs-12"><a href="#day-2" aria-controls="day-2" role="tab" data-toggle="tab"><span>Day 2#</span></a></div></li>
+            <li class="col-md-4 col-sm-4  col-xs-12 " ><div class="col-md-12 col-xs-12"><a href="#day-3" aria-controls="day-3" role="tab" data-toggle="tab"><span>Day 3#</span></a></div></li>
         </ul>
     </div>
 
