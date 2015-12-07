@@ -182,7 +182,6 @@ html, body{
     margin: 0 auto;
 }
 #welcome-first{
-    background: url(../img/bg_bottom_block.png);
     background-size: cover;
     color: #fff;
     text-align: center;

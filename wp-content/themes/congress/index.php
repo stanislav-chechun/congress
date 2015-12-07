@@ -5,18 +5,21 @@ $options = get_fields('option');
 $carousel_args = array('post_type' => 'sponsorships', 'post_status' => 'publish', 'posts_per_page' => -1);
 $carousel = get_posts($carousel_args);
 ?>
-<div class="container-fluid" id="welcome-first">
+<div class="container-fluid" id="welcome-first" style="background-image: url(<?php echo $options['main_image']['url'] ?>);">
     <div id="border-first"></div>
     <div class="row" id="top-first">
         <div class="col-md-7 col-sm-7 col-xs-7">
             <div id="text-first">
-                <h1>The International Congress on
-                <strong>Clinical Trials for Medical Devices</strong></h1>
+                <h1><?php echo $options['header_text_top'] ?>
+                    <strong><?php echo $options['header_text_bottom'] ?></strong></h1>
             </div>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-4" id="date-first">
-            <h2><strong>26 AUG</strong> 2015
-            CityName, <strong>Singapore</strong></h2>
+            <h2><?php
+                $originalDate = $options['date'];
+                echo sprintf('<strong>%s</strong> %s', date('d M', strtotime($originalDate)), date(' Y ', strtotime($originalDate)));
+                echo __('CityName')
+                ?>, <strong><?php echo $options['city_name'] ?></strong></h2>
         </div>
 
     </div>
@@ -24,13 +27,13 @@ $carousel = get_posts($carousel_args);
     <div class="row" id="bottom-first">
         <div class="col-md-6 col-sm-6 col-xs-6" id="dynamic-links">
             <ul class="list-inline">
-                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/calendar.png" alt="Calendar" /></a></li>
-                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/mail.png" alt="Mail" /></a></li>
-                <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="Map" /></a></li>
+                <li><a href="<?php echo $options['data_icon'] ?>"><img src="<?php echo get_template_directory_uri() ?>/images/calendar.png" alt="Calendar" /></a></li>
+                <li><a href="<?php echo $options['mail_icon'] ?>"><img src="<?php echo get_template_directory_uri() ?>/images/mail.png" alt="Mail" /></a></li>
+                <li><a href="<?php echo $options['map_icon'] ?>"><img src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="Map" /></a></li>
             </ul> 
         </div>
         <div class="col-md-6 col-sm-6 col-xs-6" id="button-first">
-            <a href="#" class="button" id="register-now">Register now</a>
+            <a href="<?php echo $options['register_button'] ?>" class="button" id="register-now">Register now</a>
         </div>
 
     </div>
@@ -251,13 +254,13 @@ $carousel = get_posts($carousel_args);
                 ?>    
                 <div id="<?php the_ID() ?>" class="col-md-4 text-center speaker">
                     <div class="helper">
-                        <?php the_post_thumbnail() ?>
+                    <?php the_post_thumbnail() ?>
                     </div>    
-                    <?php //var_dump($data) ?>
+    <?php //var_dump($data)  ?>
                     <p class="first-text"><?php echo $data['fisrt_name']['0'] ?> <span> <?php echo $data['last_name']['0'] ?></span></p>
                     <p><?php echo __('Specialization') . ' ' . $data['specilization']['0'] ?>,<span><?php echo $data['country']['0'] ?></span></p>
                 </div>
-            <?php } ?>
+<?php } ?>
         </div>
     </div>
 </div>
@@ -273,7 +276,7 @@ $carousel = get_posts($carousel_args);
         $args = array('post_type' => 'registrations', 'numberposts' => 3);
         $posts = get_posts($args);
         foreach ($posts as $post) {
-          
+
             setup_postdata($post);
             congress_registration_data($post->ID);
         }
@@ -282,10 +285,10 @@ $carousel = get_posts($carousel_args);
     </div>
     <div class="row">
         <div class="col-md-4 col-sm-4 col-xs-12 bold">
-            <?php echo $options['left_text'] ?>
+<?php echo $options['left_text'] ?>
         </div>
         <div class="col-md-8 col-sm-8 col-xs-12">
-            <?php echo $options['right_text'] ?>
+<?php echo $options['right_text'] ?>
         </div>
     </div>
 </div>
@@ -315,7 +318,7 @@ $carousel = get_posts($carousel_args);
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <p id="caption-wts"><?php echo $options['content_text_top_1'] ?></p>
-                    <?php echo $options['main_content_1'] ?>
+<?php echo $options['main_content_1'] ?>
                 </div>
             </div>
             <div class="row">
@@ -329,7 +332,7 @@ $carousel = get_posts($carousel_args);
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <p id="caption-wts"><?php echo $options['content_text_top_2'] ?></p>
-                    <?php echo $options['main_content_2'] ?>
+<?php echo $options['main_content_2'] ?>
                 </div>
             </div>
             <div class="row">
@@ -343,7 +346,7 @@ $carousel = get_posts($carousel_args);
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <p id="caption-wts"><?php echo $options['content_text_1'] ?></p>
-                    <?php echo $options['main_content_3'] ?>
+<?php echo $options['main_content_3'] ?>
                 </div>
             </div>
             <div class="row">
@@ -357,7 +360,7 @@ $carousel = get_posts($carousel_args);
             <div class="row">
                 <div class="col-md-12 col-sm-12 col-xs-12">
                     <p id="caption-wts"><?php echo $options['content_text_2'] ?></p>
-                    <?php echo $options['main_content_4'] ?>
+<?php echo $options['main_content_4'] ?>
                 </div>
             </div>
             <div class="row">
@@ -409,7 +412,7 @@ foreach ($posts as $post) {
         <div class="row">
             <div class="col-md-8 popup col-centered">
                 <div class="col-md-4 image"><?php the_post_thumbnail() ?></div>
-                <?php the_content() ?>    
+    <?php the_content() ?>    
                 <a class="close-popup">Close X</a>
             </div>
         </div>
