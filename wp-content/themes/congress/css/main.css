@@ -491,6 +491,9 @@ html, body{
         border-bottom: 60px solid #8AC0E5; 
         border-right: 60px solid transparent;   
     }
+    .slider{
+        display: none;
+    }
 }
 
 
@@ -1106,6 +1109,33 @@ a{
     }
     #welcome-to-name-congress div.row:first-child a:hover:after{
         display: none;
+    }
+    .nav-tabs > li{
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 640px){
+    #program-block .text p{
+    padding: 0 !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    }
+    #program-block .hepler .time, #program-block .hepler .button, #program-block .hepler .text{
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+        margin-bottom: 10px;
+    }
+    #program-block .button{
+    background: #8bb9f4;
+    }
+    #program-block .button a{
+    color: #fff;    
+    border: 2px solid #72a5e7; 
     }
 
 }
