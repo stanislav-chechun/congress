@@ -239,8 +239,19 @@ html, body{
     width: 100%;
     bottom: 0;
 }
+<<<<<<< Updated upstream
 #dynamic-links{
     text-align: center;
+=======
+#welc-to-cong-all{
+margin-left: 10%;
+}
+@import "normalize.css";
+
+#list-inline li{
+    margin: 50px;
+    display: inline-block;
+>>>>>>> Stashed changes
 }
 
 #register-now{
@@ -250,6 +261,7 @@ html, body{
     font-size: 27px;
     cursor: pointer;
     text-decoration: none;
+<<<<<<< Updated upstream
     padding: 13px 55px 18px;
     border: 2px solid white;
     margin-left: 7px;
@@ -273,6 +285,71 @@ html, body{
 
 }
 
+=======
+    padding: 10px 40px;
+    border: 3px solid white;
+    border-radius: 3px;
+    background-color: rgba(0, 0, 0, 0.1); 
+
+     
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    
+   #register-now{
+    color: #fff;
+    font-size: 20x;
+    padding: 5px 20px; 
+     display: block;
+    margin-top: 50px;
+} 
+}
+@media (min-width: 480px) and (max-width: 768px) {
+    #register-now{
+   color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 5px 15px; 
+     display: block; 
+}
+#list-inline li{
+    margin: 20px;
+}
+#text-first{
+    font-size: 30px;
+}
+#date-first{ 
+    font-size: 30px;
+}
+}
+@media (max-width: 480px) {
+    
+    #register-now{
+    color: #fff;
+    font-size: 10px;
+    padding: 5px 10px;
+    display: block; 
+     font-weight: 400;
+}
+#list-inline li{
+    margin: 3px;
+    margin-bottom: 10px;
+}
+#text-first{
+    font-size: 20px;
+}
+#date-first{ 
+    font-size: 20px;
+}
+}
+
+a #register-now :hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+} 
+>>>>>>> Stashed changes
 #welcome-to-name-congress{
 	min-height: 100%;
 	background: #F1F2F6;
@@ -329,11 +406,19 @@ html, body{
     color: #4D4D4D;
     font-size: 22px;
 }
+<<<<<<< Updated upstream
 #caption-wtnc{
     color: #448CCB;
     text-align: center;
     font-size: 38px;
     margin: 2% 0;
+=======
+#caption-wtnc, #newslwtter h3{
+	color: #448CCB;
+	text-align: center;
+	font-size: 2.4vmax;
+	margin: 2% 0;
+>>>>>>> Stashed changes
 }
 .carousel-control{
     opacity: 1 !important;
@@ -408,6 +493,18 @@ html, body{
 #buttons-block{
     text-align: center;
     margin-top: 2%;
+}
+#newslwtter{ 
+    color: #4D4D4D; 
+    margin: 3%;
+}
+#newslwtter p{ 
+    font-size: 18pt;
+}
+#input-newsletter{
+    height: 4%;
+    width: 55%;
+    
 }
 .btn-blue{
     background: #448CCB;
@@ -572,7 +669,7 @@ html, body{
 #registration-block .row:nth-child(3){
     color: #fff;
     width: 80%;
-    margin: 0 auto 30px;
+  //  margin: 0 auto 30px;
     font-size: 1.5vmax;
 }
 #registration-block .row .bold{
@@ -792,6 +889,7 @@ a{
 }
 #program-block .tab-pane{
     overflow: hidden;
+    font-weight:bold;
     text-align: center;
     margin-top: 70px;
 }

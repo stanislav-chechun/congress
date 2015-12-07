@@ -22,8 +22,13 @@ $carousel = get_posts($carousel_args);
     </div>
 
     <div class="row" id="bottom-first">
+<<<<<<< Updated upstream
         <div class="col-md-6 col-sm-6 col-xs-6" id="dynamic-links">
             <ul class="list-inline">
+=======
+        <div class="col-md-8 col-sm-8 col-xs-8" id="dynamic-links">
+            <ul id="list-inline">
+>>>>>>> Stashed changes
                 <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/calendar.png" alt="Calendar" /></a></li>
                 <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/mail.png" alt="Mail" /></a></li>
                 <li><a href="#"><img src="<?php echo get_template_directory_uri() ?>/images/map.png" alt="Map" /></a></li>
@@ -125,6 +130,7 @@ $carousel = get_posts($carousel_args);
         <div class="col-md-12 col-sm-12 col-xs-12">
             <p id="caption-wtnc">WELCOME TO NAME CONGRESS</p>
         </div>
+        <div id="welc-to-cong-all">
         <div class="col-md-5 col-sm-12 col-xs-12">
             <p>Lorem ipsum dolor sit amet, consectetur adip-iscing elit. Nulla ultrices augue lacus, vitae elementum nulla consectetur vitae. Nulla commondo dignissim lacus, ac scelerisque risus ultrices vel. Phasellus fermentum rhoncus tellus.</p>
             <p>It tincidunt nulla finibus a. Nunc turpis odio, luctus sit amet elementum in, ultricies et urna. Ut vel felis at justo suscipit efficitur nec sit amet orci. Aliquam auctor nibh et soiiicitudin porta. Aenean bibendum dolor vitae odio lacinia tempus. Morbi luctus risus in mollis</p>
@@ -151,6 +157,7 @@ $carousel = get_posts($carousel_args);
                 </a>
             </div>
         </div>	
+        </div>
         <div class="col-md-12 col-sm-12 col-xs-12" id="buttons-block">
             <a href="#" class="btn-blue" alt="">READ MORE</a>
             <a href="#" class="btn-blue" alt="">ANOTHER CTA BUTTON</a>
@@ -158,7 +165,13 @@ $carousel = get_posts($carousel_args);
     </div>			
 </div>
 <div class="container-fluid" id="newslwtter">
-    <h3>Official newsletter</h3>
+    <h3>OFFICIAL NEWSLETTER</h3> 
+    <p class="col-md-3 col-xs-12"> Let us keep you up to date on all news and activites </p>
+    <form class="col-md-8 col-xs-12 ">
+        <input type="text" placeholder="add picture" id="input-newsletter"></input>
+        <a href="#" class="btn-blue" alt=""> SUBSCRIBE NOW </a>
+     </form>
+     
     <div class="row">
 
     </div>
@@ -276,7 +289,7 @@ $carousel = get_posts($carousel_args);
             setup_postdata($post);
             $data = get_post_meta(($post->ID), '', true);
             ?>
-            <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="col-lg-4 col-md-5 col-sm-8 col-xs-12">
                 <p class="title-reg"><?php the_title() ?></p>
                 <p><span class="color-grey"><?php echo $data['price_1']['0'] ?></span><?php echo $data['text_for_price_1']['0'] ?></p>
                 <p><span class="color-grey"><?php echo $data['price_2']['0'] ?></span><?php echo $data['text_for_price_2']['0'] ?></p>
@@ -305,13 +318,13 @@ $carousel = get_posts($carousel_args);
                     <li class="col-md-3 active">
                         <a href="<?php echo '#' . $options['id_item_menu_1'] ?>" aria-controls="getting" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_1'] ?></a>
                     </li>
-                    <li class="col-md-3">
+                    <li class="col-md-3 ">
                         <a href="<?php echo '#' . $options['id_item_menu_2'] ?>" aria-controls="city" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_2'] ?></a>
                     </li>
-                    <li class="col-md-3">
+                    <li class="col-md-3 ">
                         <a href="<?php echo '#' . $options['id_item_menu_3'] ?>" aria-controls="conference" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_3'] ?></a>
                     </li>
-                    <li class="col-md-3">
+                    <li class="col-md-3 ">
                         <a href="<?php echo '#' . $options['id_item_menu_4'] ?>" aria-controls="arrival" role="tab" data-toggle="tab"><?php echo $options['first_item_menu_4'] ?></a>
                     </li>
                 </ul>
