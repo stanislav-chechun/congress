@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
             }
         },
         responsive:{
-            320: {
+            480: {
                 items: 1
             }
         }
@@ -54,5 +54,12 @@ jQuery(document).ready(function ($) {
         $(".close-popup").click(function () {
            $('.main-popup').fadeOut(); 
         });
+
+    $(".speaker").click(function () {
+        var popup = $(".main-popup");
+        var posScroll1 = $(window).scrollTop();
+        var num = parseFloat(posScroll1, 10);
+        popup.css("marginTop", num);
+    });
 });
 

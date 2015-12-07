@@ -401,6 +401,7 @@ $carousel = get_posts($carousel_args);
     </div>
 </div>
 <!-- pop-ups -->
+
 <?php
 global $post;
 $args = array('post_type' => 'speakers', 'numberposts' => -1);
@@ -411,11 +412,11 @@ foreach ($posts as $post) {
     <div class="container-fluid main-popup <?php the_ID() ?>">
         <div class="row">
             <div class="col-md-8 popup col-centered">
-                <div class="col-md-4 image"><?php the_post_thumbnail() ?></div>
+                <div class="col-md-4 image popup-img"><?php the_post_thumbnail() ?></div>
     <?php the_content() ?>    
                 <a class="close-popup">Close X</a>
             </div>
-        </div>
+         </div>
     </div>
 <?php } ?>
 <?php get_footer(); ?>

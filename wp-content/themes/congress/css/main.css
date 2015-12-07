@@ -174,8 +174,8 @@ html, body{
     margin-left: 20%;
 }
 #text-first strong{
-    font-family: 'robotobold';
-    display: block;
+     font-family: 'robotobold';
+     display: block;
 }
 .col-centered{
     float: none;
@@ -947,18 +947,23 @@ a{
     background: rgba(68, 140, 203, 0.8);
 }
 .main-popup{
+    overflow:scroll;
     background: rgba(0,0,0,0.5);
     position: fixed;
     top: 0px;
-    height: 100%;
+    padding-bottom: 20px;
+    width: auto;
+    height: auto;
     color:#fff;
     display: none;
     z-index: 999;
 }
 .main-popup .row{
+
     margin-top: 50px;
 }
 .main-popup .row img{
+    min-height: 240px;
     border: 5px solid #fff;
     margin: 0 auto;
     display: block;
@@ -966,8 +971,8 @@ a{
     height: auto;
 }
 .main-popup .row p{
-    font-family: robotothin;
-    font-size: 25px; 
+  font-family: robotothin;
+  font-size: 20px;
 }
 .main-popup .row .bio{
     margin: 25px 0;
@@ -1149,7 +1154,16 @@ a{
 
 }
 @media (max-width: 400px){
-    #top-first .mobile h1{
+    .main-popup{
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        margin-top: 2730px;
+    }
+    .main-popup .row img{
+        min-height: 180px;
+    }
+
+   #top-first .mobile h1{
         font-size: 24px;
     }
     #top-first .mobile h2{
